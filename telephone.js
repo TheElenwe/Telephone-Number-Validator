@@ -1,7 +1,9 @@
 function telephoneCheck(str) {
   
-    
-    if (str.length ===10 ){
+    if (str.indexOf(' ') >=0){
+        return false;
+    }
+    else if (str.length ===10 ){
         return true;
     }else if(str.length ===14 ){
          return true;
@@ -18,11 +20,8 @@ function telephoneCheck(str) {
         return false;
     }
    
-    else if (){
-       return false;
-
-    }
+   
     
   }
   
-  console.log(telephoneCheck("55 55-55-555-5"));
+  console.log(telephoneCheck(""));
