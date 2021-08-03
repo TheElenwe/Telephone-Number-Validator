@@ -2,12 +2,14 @@ function telephoneCheck(str,meme) {
   
   
     
-     if(str.length ===4){
+     if(str.length ===4 ){
         return true;
     }
-  
-  else if (str ==="1"){
-    return true
+   else if(str.length <1){
+       return false
+   }
+  else if(str ===1){
+      return true
   }
    else {
        return false;
@@ -15,4 +17,4 @@ function telephoneCheck(str,meme) {
     
   }
   
-  console.log(telephoneCheck("12222"));
+  console.log(telephoneCheck("1222"));
