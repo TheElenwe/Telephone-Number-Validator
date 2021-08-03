@@ -1,16 +1,28 @@
 function telephoneCheck(str) {
   
-   
-    if (str.length ===10 || str.length ===12 || str.length === 13 || str==="1"){
-        
+    
+    if (str.length ===10 ){
         return true;
+    }else if(str.length ===14 ){
+         return true;
     }
-  
-   else if(str ==="-" || str ==="(" || str === ")"){
-       return true;
-   }
+    else if(str.length <1){
+        return false;
+    }
+    else if(str === 1){
+        return true
+    }
+    else if(str==="-"){
+
+    }else if(str == " "){
+        return false;
+    }
    
+    else if (){
+       return false;
+
+    }
     
   }
   
-  console.log(telephoneCheck("155555555555"));
+  console.log(telephoneCheck("55 55-55-555-5"));
