@@ -1,27 +1,5 @@
 function telephoneCheck(str) {
+    return /^(1\s|1)?(\(\d{3}\)|\d{3})(-|\s)?\d{3}(-|\s)?\d{4}$/.test(str);
   
-    if (str.indexOf(' ') >=0){
-        return false;
-    }
-    else if (str.length ===10 ){
-        return true;
-    }else if(str.length ===14 ){
-         return true;
-    }
-    else if(str.length <1){
-        return false;
-    }
-    else if(str === 1){
-        return true
-    }
-    else if(str==="-"){
-
-    }else if(str == " "){
-        return false;
-    }
-   
-   
-    
-  }
-  
-  console.log(telephoneCheck(""));
+}
+  console.log(telephoneCheck("(555)-555-5555"));
